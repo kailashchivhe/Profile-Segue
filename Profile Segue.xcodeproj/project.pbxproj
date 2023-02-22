@@ -13,6 +13,12 @@
 		CB76D2B1299D5A3C00BEF8CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB76D2AF299D5A3C00BEF8CD /* Main.storyboard */; };
 		CB76D2B3299D5A3E00BEF8CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB76D2B2299D5A3E00BEF8CD /* Assets.xcassets */; };
 		CB76D2B6299D5A3E00BEF8CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB76D2B4299D5A3E00BEF8CD /* LaunchScreen.storyboard */; };
+		CBADF06529A33AFC00245A91 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBADF06429A33AFC00245A91 /* ProfileViewController.swift */; };
+		CBADF06729A404F600245A91 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBADF06629A404F600245A91 /* User.swift */; };
+		CBADF06929A47A5D00245A91 /* UpdateNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBADF06829A47A5D00245A91 /* UpdateNameViewController.swift */; };
+		CBADF06B29A47A7200245A91 /* UpdateEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBADF06A29A47A7200245A91 /* UpdateEmailViewController.swift */; };
+		CBADF06D29A47A8F00245A91 /* UpdatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBADF06C29A47A8F00245A91 /* UpdatePasswordViewController.swift */; };
+		CBADF07129A47E2800245A91 /* UpdateDepartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBADF07029A47E2800245A91 /* UpdateDepartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		CB76D2B2299D5A3E00BEF8CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB76D2B5299D5A3E00BEF8CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB76D2B7299D5A3E00BEF8CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBADF06429A33AFC00245A91 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CBADF06629A404F600245A91 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CBADF06829A47A5D00245A91 /* UpdateNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateNameViewController.swift; sourceTree = "<group>"; };
+		CBADF06A29A47A7200245A91 /* UpdateEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateEmailViewController.swift; sourceTree = "<group>"; };
+		CBADF06C29A47A8F00245A91 /* UpdatePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordViewController.swift; sourceTree = "<group>"; };
+		CBADF07029A47E2800245A91 /* UpdateDepartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDepartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +75,12 @@
 				CB76D2B2299D5A3E00BEF8CD /* Assets.xcassets */,
 				CB76D2B4299D5A3E00BEF8CD /* LaunchScreen.storyboard */,
 				CB76D2B7299D5A3E00BEF8CD /* Info.plist */,
+				CBADF06429A33AFC00245A91 /* ProfileViewController.swift */,
+				CBADF06629A404F600245A91 /* User.swift */,
+				CBADF06829A47A5D00245A91 /* UpdateNameViewController.swift */,
+				CBADF06A29A47A7200245A91 /* UpdateEmailViewController.swift */,
+				CBADF06C29A47A8F00245A91 /* UpdatePasswordViewController.swift */,
+				CBADF07029A47E2800245A91 /* UpdateDepartViewController.swift */,
 			);
 			path = "Profile Segue";
 			sourceTree = "<group>";
@@ -140,6 +158,12 @@
 			files = (
 				CB76D2AE299D5A3C00BEF8CD /* ViewController.swift in Sources */,
 				CB76D2AA299D5A3C00BEF8CD /* AppDelegate.swift in Sources */,
+				CBADF06D29A47A8F00245A91 /* UpdatePasswordViewController.swift in Sources */,
+				CBADF07129A47E2800245A91 /* UpdateDepartViewController.swift in Sources */,
+				CBADF06929A47A5D00245A91 /* UpdateNameViewController.swift in Sources */,
+				CBADF06529A33AFC00245A91 /* ProfileViewController.swift in Sources */,
+				CBADF06729A404F600245A91 /* User.swift in Sources */,
+				CBADF06B29A47A7200245A91 /* UpdateEmailViewController.swift in Sources */,
 				CB76D2AC299D5A3C00BEF8CD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
