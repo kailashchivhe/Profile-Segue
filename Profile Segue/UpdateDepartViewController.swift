@@ -25,6 +25,18 @@ class UpdateDepartViewController: UIViewController {
         }
     }
     
+    @IBAction func updateDepartment(_ sender: Any) {
+                    if segmentedDepartment.selectedSegmentIndex == 0{
+                        user?.department = "CS"
+                    }
+                    else if segmentedDepartment.selectedSegmentIndex == 1{
+                        user?.department = "SIS"
+                    }
+                    else if segmentedDepartment.selectedSegmentIndex == 2{
+                        user?.department = "BIO"
+                    }
+        NotificationCenter.default.post(name: Notification.Name("UpdateDepartment"), object: user )
+    }
     
     @IBAction func cancelClicked(_ sender: Any) {
         self.dismiss(animated: true)
@@ -32,17 +44,17 @@ class UpdateDepartViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "unwindDepartToProfile"{
-            if segmentedDepartment.selectedSegmentIndex == 0{
-                user?.department = "CS"
-            }
-            else if segmentedDepartment.selectedSegmentIndex == 1{
-                user?.department = "SIS"
-            }
-            else if segmentedDepartment.selectedSegmentIndex == 2{
-                user?.department = "BIO"
-            }
-            let destinationVC = segue.destination as! ProfileViewController
-            destinationVC.user = user
+//            if segmentedDepartment.selectedSegmentIndex == 0{
+//                user?.department = "CS"
+//            }
+//            else if segmentedDepartment.selectedSegmentIndex == 1{
+//                user?.department = "SIS"
+//            }
+//            else if segmentedDepartment.selectedSegmentIndex == 2{
+//                user?.department = "BIO"
+//            }
+//            let destinationVC = segue.destination as! ProfileViewController
+//            destinationVC.user = user
         }
     }
 }

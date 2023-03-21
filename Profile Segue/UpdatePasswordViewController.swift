@@ -18,15 +18,20 @@ class UpdatePasswordViewController: UIViewController {
         textFieldPassword.text = user?.password ?? ""
     }
     
+    @IBAction func updatePassword(_ sender: UIButton) {
+        user?.password = textFieldPassword.text ?? ""
+        NotificationCenter.default.post(name: Notification.Name("UpdatePassword"), object: user )
+    }
+    
     @IBAction func cancelClicked(_ sender: Any) {
         self.dismiss(animated: true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "unwindPasswordToProfile"{
-            user?.password = textFieldPassword.text ?? ""
-            let destinationVC = segue.destination as! ProfileViewController
-            destinationVC.user = user
+//            user?.password = textFieldPassword.text ?? ""
+//            let destinationVC = segue.destination as! ProfileViewController
+//            destinationVC.user = user
         }
     }
 }

@@ -23,14 +23,15 @@ class UpdateNameViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "unwindNameToProfile"{
-            user?.name = textFieldName.text ?? ""
-            let destinationVCName = segue.destination as! ProfileViewController
-            destinationVCName.user = user
+//            user?.name = textFieldName.text ?? ""
+//            let destinationVCName = segue.destination as! ProfileViewController
+//            destinationVCName.user = user
         }
     }
     
     
     @IBAction func onUpdateClicked(_ sender: Any) {
-        
+        user?.name = textFieldName.text ?? ""
+        NotificationCenter.default.post(name: Notification.Name("UpdateName"), object: user )
     }
 }

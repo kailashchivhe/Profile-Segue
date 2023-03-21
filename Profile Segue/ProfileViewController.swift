@@ -20,6 +20,15 @@ class ProfileViewController:
     override func viewDidLoad() {
         super.viewDidLoad()
         initData()
+        NotificationCenter.default.addObserver( self, selector: #selector(onReceiveNotification(notification:)), name: Notification.Name("UpdateName"), object: user)
+        NotificationCenter.default.addObserver( self, selector: #selector(onReceiveNotification(notification:)), name: Notification.Name("UpdateEmail"), object: user)
+        NotificationCenter.default.addObserver( self, selector: #selector(onReceiveNotification(notification:)), name: Notification.Name("UpdatePassword"), object: user)
+        NotificationCenter.default.addObserver( self, selector: #selector(onReceiveNotification(notification:)), name: Notification.Name("UpdateDepartment"), object: user)
+    }
+    
+    @objc func onReceiveNotification( notification: Notification ){
+        user = notification.object as? User
+        initData()
     }
     
     func initData(){

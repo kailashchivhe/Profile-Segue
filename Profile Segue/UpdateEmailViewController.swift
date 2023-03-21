@@ -19,6 +19,10 @@ class UpdateEmailViewController: UIViewController {
         textFieldEmail.text = user?.email ?? ""
     }
     
+    @IBAction func updateEmail(_ sender: UIButton) {
+        user?.email = textFieldEmail.text ?? ""
+        NotificationCenter.default.post(name: Notification.Name("UpdateEmail"), object: user )
+    }
     
     @IBAction func cancelClicked(_ sender: Any) {
         self.dismiss(animated: true)
@@ -26,9 +30,9 @@ class UpdateEmailViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "unwindEmailToProfile"{
-            user?.email = textFieldEmail.text ?? ""
-            let destinationVC = segue.destination as! ProfileViewController
-            destinationVC.user = user
+//            user?.email = textFieldEmail.text ?? ""
+//            let destinationVC = segue.destination as! ProfileViewController
+//            destinationVC.user = user
         }
     }
 }
